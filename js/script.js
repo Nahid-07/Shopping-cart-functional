@@ -32,8 +32,16 @@ document.getElementById('btn-phone-plus').addEventListener('click',function(){
     setTextElement('phone-price',phonePriceUpdate);
     const totalPhonePrice = getTotalPriceElement('phone-price');
     const totalCasePrice = getTotalPriceElement('case-price');
+    const totalPhoneCasePrice = totalPhonePrice + totalCasePrice;
     const subTotalElement = document.getElementById('sub-total');
-    subTotalElement.innerText = totalPhonePrice + totalCasePrice;
+    subTotalElement.innerText = totalPhoneCasePrice;
+    const tax = (totalPhoneCasePrice /100) * 10;
+    const taxConvert = parseFloat(tax.toFixed(2));
+    const taxElement = document.getElementById('tax');
+    taxElement.innerText = taxConvert;
+    const total = totalPhoneCasePrice + taxConvert;
+    const totalCost = document.getElementById('total');
+    totalCost.innerText = total;
     
     
     
@@ -45,8 +53,17 @@ document.getElementById('btn-phone-minus').addEventListener('click',function(){
     setTextElement('phone-price',phonePriceUpdate)
     const totalPhonePrice = getTotalPriceElement('phone-price');
     const totalCasePrice = getTotalPriceElement('case-price');
+    const totalPhoneCasePrice = totalPhonePrice + totalCasePrice;
     const subTotalElement = document.getElementById('sub-total');
-    subTotalElement.innerText = totalPhonePrice + totalCasePrice;
+    subTotalElement.innerText = totalPhoneCasePrice;
+    const tax = (totalPhoneCasePrice /100) * 10;
+    const taxConvert = parseFloat(tax.toFixed(2));
+    const taxElement = document.getElementById('tax');
+    taxElement.innerText = taxConvert;
+    const total = totalPhoneCasePrice + taxConvert;
+    const totalCost = document.getElementById('total');
+    totalCost.innerText = total;
+    
 });
 // case price plus
 document.getElementById('btn-case-plus').addEventListener('click',function(){
@@ -55,8 +72,16 @@ document.getElementById('btn-case-plus').addEventListener('click',function(){
     setTextElement('case-price',casePriceUpdate);
     const totalPhonePrice = getTotalPriceElement('phone-price');
     const totalCasePrice = getTotalPriceElement('case-price');
+    const totalPhoneCasePrice = totalPhonePrice + totalCasePrice;
     const subTotalElement = document.getElementById('sub-total');
-    subTotalElement.innerText = totalPhonePrice + totalCasePrice;
+    subTotalElement.innerText = totalPhoneCasePrice;
+    const tax = (totalPhoneCasePrice /100) * 10;
+    const taxConvert = parseFloat(tax.toFixed(2));
+    const taxElement = document.getElementById('tax');
+    taxElement.innerText = taxConvert;
+    const total = totalPhoneCasePrice + taxConvert;
+    const totalCost = document.getElementById('total');
+    totalCost.innerText = total;
 
 
 })
@@ -67,6 +92,14 @@ document.getElementById('btn-case-minus').addEventListener('click',function(){
     setTextElement('case-price',casePriceUpdate);
     const totalPhonePrice = getTotalPriceElement('phone-price');
     const totalCasePrice = getTotalPriceElement('case-price');
+    const totalPhoneCasePrice = totalPhonePrice + totalCasePrice;
     const subTotalElement = document.getElementById('sub-total');
-    subTotalElement.innerText = totalPhonePrice + totalCasePrice;
+    subTotalElement.innerText = totalPhoneCasePrice;
+    const tax = (totalPhoneCasePrice /100) * 10;
+    const taxConvert = parseFloat(tax.toFixed(2));
+    const taxElement = document.getElementById('tax');
+    taxElement.innerText = taxConvert;
+    const total = totalPhoneCasePrice + taxConvert;
+    const totalCost = document.getElementById('total');
+    totalCost.innerText = total;
 })
